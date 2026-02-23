@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARUN GR | GenAI Engineer & Backend Developer</title>
+    <meta name="description"
+        content="Portfolio of Arun GR — GenAI Engineer, Backend Developer, and AI enthusiast building intelligent systems." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">A<span>GR</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hello, I'm</p>
+            <h1 class="hero-name reveal">ARUN <span class="gradient-text">GR</span></h1>
+            <div class="hero-typing-wrapper reveal">
+                <span class="hero-typing-label">I build </span>
+                <span class="typed-text" id="typed-text"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description reveal">
+                3rd-year ECE undergraduate passionate about Generative AI, NLP, and crafting intelligent backend
+                systems.
+            </p>
+            <div class="hero-buttons reveal">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-socials reveal">
+                <a href="https://github.com/ARUN-GR05" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/arun-gr1288/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:arunragunathangr@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <h2 class="section-title reveal"><span class="section-number">01.</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a curious problem-solver and a 3rd-year <strong>Electronics and Communication
+                            Engineering</strong>
+                        undergraduate with a deep interest in <strong>Generative AI</strong> and <strong>Backend
+                            Development</strong>.
+                    </p>
+                    <p>
+                        My journey revolves around exploring the cutting edge of AI — from <strong>Natural Language
+                            Processing</strong>
+                        and <strong>Large Language Models</strong> to building robust <strong>RAG pipelines</strong> and
+                        <strong>AI Agents</strong>. I love turning complex ideas into practical, elegant solutions.
+                    </p>
+                    <p>
+                        When I'm not coding, I'm experimenting with new tools, contributing to open-source,
+                        or diving deeper into the world of intelligent systems.
+                    </p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-label">Hackathon Win</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <h2 class="section-title reveal"><span class="section-number">02.</span> Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">C</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & GenAI</h3>
+                    <div class="skill-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">Prompt Engineering</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">AI Agents</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Databases</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-tilt>
+                    <div class="skill-icon"><i class="fas fa-toolbox"></i></div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Google Colab</span>
+                        <span class="tag">Hugging Face</span>
+                        <span class="tag">Ollama</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="section-container">
+            <h2 class="section-title reveal"><span class="section-number">03.</span> Certifications & Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">IBM</span>
+                        <h4>AI Literacy</h4>
+                        <p>Foundational understanding of artificial intelligence concepts and applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">IBM</span>
+                        <h4>Prompt Engineering for Everyone</h4>
+                        <p>Mastering the art and science of crafting effective prompts for LLMs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">IBM</span>
+                        <h4>AI Forms and Functions</h4>
+                        <p>Deep dive into the various forms, architectures, and use cases of AI.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">NVIDIA</span>
+                        <h4>Getting Started with AI on Jetson Nano</h4>
+                        <p>Hands-on AI deployment on edge hardware using NVIDIA Jetson Nano.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">ZBrain</span>
+                        <h4>Beginner AI Agent Builder</h4>
+                        <p>Building AI-powered autonomous agents using no-code/low-code tools.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content trophy">
+                        <span class="timeline-badge achievement">🏆 Achievement</span>
+                        <h4>Hackathon Winner</h4>
+                        <p>Recognized for building an innovative AI-powered solution under pressure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <h2 class="section-title reveal"><span class="section-number">04.</span> Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ARUN-GR05" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h4>Jewellery Recommendation System</h4>
+                    <p>AI-powered recommendation engine with a luxury frontend, deployed on Render & Vercel.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>OpenAI</span>
+                        <span>Vercel</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ARUN-GR05" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h4>Live Audio Transcription</h4>
+                    <p>Real-time speech-to-text using Whisper API with optimized streaming and latency.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Whisper</span>
+                        <span>WebSocket</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/ARUN-GR05" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h4>ASR Evaluation Pipeline</h4>
+                    <p>Benchmarking Whisper-1 vs wav2vec2 on WER, CER, and RTF metrics in a Colab notebook.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Hugging Face</span>
+                        <span>Colab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container contact-container">
+            <h2 class="section-title reveal"><span class="section-number">05.</span> Get In Touch</h2>
+            <p class="contact-text reveal">
+                I'm always open to new opportunities, collaborations, and interesting conversations.
+                Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+            <a href="mailto:arunragunathangr@gmail.com" class="btn btn-primary btn-lg reveal">Say Hello <i
+                    class="fas fa-paper-plane"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-socials">
+                <a href="https://github.com/ARUN-GR05" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arun-gr1288/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-credit">Designed & Built by <strong>Arun GR</strong></p>
+            <p class="footer-copy">&copy; 2026 ARUN GR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
